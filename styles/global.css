@@ -14,6 +14,8 @@
   --content-tertiary:#9CA3AF;
   --white:#FFFFFF;
 
+  --bg-primary:#F4F5FB;
+
   --border-primary:#D1D5DB;
   --border-hover:#B9C2D0;
 
@@ -26,6 +28,7 @@
 
 body{
   overflow: hidden;
+  background-color: var(--bg-primary);
 }
 
 
@@ -33,7 +36,7 @@ h1{
   font: var(--h1);
 }
 
-label{
+label,p{
   font: var(--p);
 }
 

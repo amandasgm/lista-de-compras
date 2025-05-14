@@ -8,7 +8,8 @@ main{
   margin: auto;
   margin-top: 6rem;
 
-  & #insert-form {
+  /* FORMULARIO PARA ADICIONAR ITEMS */
+  & #add-item {
     display: flex;
     gap: 1rem;
     
@@ -45,7 +46,78 @@ main{
         cursor: pointer;
       }
     }
+  }
 
-    /* SEGUIR COM A PARTE DOS ITENS DA LISTA */
+  /* ITEMS DA LISTA */
+  & #items{
+    display: grid;
+    gap: 1rem;
+
+    & .modelo {
+      display: none;
+    }
+
+    & .item{
+      background-color: var(--white);
+      border-radius: .75rem;
+      padding-inline: .75rem;
+      padding-block: .5rem;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+
+      height: 3rem;
+    
+      & div {
+        display: flex;
+        gap: .75rem;
+      }
+
+      & button {
+        background: none;
+        border: none;
+        
+        & img {
+          scale: 1.2;
+        }
+
+        &:hover{
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  /* MENSAGEM DE REMOÇAO DE ITEM  */
+  & #remove-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--color-danger);
+    color: var(--white);
+    padding: .75rem;
+    border-radius: .75rem;
+
+    & div {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    & button {
+      background: none;
+      border: none;
+      
+      & img {
+        scale: 1.2;
+      }
+
+      &:hover{
+        cursor: pointer;
+      }
+    }
   }
 }
+

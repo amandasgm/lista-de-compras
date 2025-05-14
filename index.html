@@ -21,25 +21,29 @@
   <main>
     <h1>Compras da semana</h1>
 
-    <form action="submit" id="insert-form">
-      <input type="text" placeholder="Adiciones um novo item">
+    <form action="" id="add-item">
+      <input type="text" name="add" id="add" placeholder="Adicione um novo item">
       <button type="submit">Adicionar item</button>
     </form>
 
-    <div id="items">
-      <form>
-        <input type="checkbox" name="item" id="item">
-        <label for="item">Pão de forma</label>
+    <form id="items">
+      <div class="item">
+        <div id="container-text">
+          <input type="checkbox">
+          <label for="a">Pão de forma</label>
+        </div>
         <button>
-          <img src="assets/icons/trash.svg" alt="">
+          <img id="delete" src="assets/icons/trash.svg" alt="">
         </button>
-      </form>
-    </div>
+      </div>  
+    </form>
 
     <div id="remove-item">
-      <img src="assets/icons/warning-circle-filled.svg" alt="">
-      <span>O item foi removido da lista</span>
-      <img src="assets/icons/x-small.svg" alt="">
+      <div>
+        <img src="assets/icons/warning-circle-filled.svg" alt="">
+        <span>O item foi removido da lista</span>
+      </div>
+      <button><img src="assets/icons/x-small.svg" alt=""></button>
     </div>
   </main>
 
