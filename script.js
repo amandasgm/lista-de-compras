@@ -51,8 +51,29 @@ form.addEventListener("submit", (e) => {
       inputTask.value = ""; // Limpa o campo de entrada
 
       trash.addEventListener("click", () => {
-        divItem.remove()
-      })
+        divItem.remove();
+      
+        const divTrash = document.querySelector("#remove-item");
+      
+        if (divTrash) {
+          // Mostra a mensagem
+          divTrash.classList.remove("hidden");
+      
+          // Fecha automaticamente após 2 segundos
+          setTimeout(() => {
+            divTrash.classList.add("hidden");
+          }, 2000);
+      
+          // Fecha ao clicar no botão X
+          const btnClose = divTrash.querySelector("button");
+          if (btnClose) {
+            btnClose.addEventListener("click", () => {
+              divTrash.classList.add("hidden");
+            });
+          }
+        }
+      });
+      
     }  
 
   } catch (err) {
