@@ -34,4 +34,4 @@ Você pode visualizar o layout do projeto através [desse link](https://www.figm
 
 
 
-Feito by Amanda e ensinado/corregido com ♥ by Rocketseat 
+Feito by Amanda e ensinado/corrigido com ♥ by Rocketseat 
